@@ -1,4 +1,5 @@
-# ISBI2026 FreqDINO: Frequency-Guided Adaptation for Generalized Boundary-Aware Ultrasound Image Segmentation
+<div align="center">
+# ISBI 2026 FreqDINO: Frequency-Guided Adaptation for Generalized Boundary-Aware Ultrasound Image Segmentation
 
 [![arXiv](https://img.shields.io/badge/arXiv-2512.11335-b31b1b.svg)](https://arxiv.org/abs/2512.11335)
 [![GitHub](https://img.shields.io/github/stars/MingLang-FD/FreqDINO?style=social)](https://github.com/MingLang-FD/FreqDINO)
@@ -8,7 +9,7 @@
 
 ---
 
-> **FreqDINO** bridges the gap between natural-image vision transformers and medical image segmentation by injecting wavelet-based frequency cues into a frozen DINOv3 backbone — no full fine-tuning required.
+> **FreqDINO** is a frequency-guided segmentation framework that adapts a frozen DINOv3 backbone for ultrasound image segmentation. It addresses DINOv3's limited sensitivity to ultrasound-specific boundary degradation by introducing three complementary modules: **MFEA** for multi-scale frequency extraction and alignment via Haar wavelet transform, **FGBR** for boundary prototype distillation and feature refinement, and **MBGD** for joint boundary-semantic prediction. FreqDINO achieves **86.52% Dice** on BUSI and strong zero-shot generalization on TN3K.
 
 ---
 
@@ -16,7 +17,11 @@
 
 <div align="center">
 
+Yixuan Zhang\*, Qing Xu\*, Yue Li\*, Xiangjian He†, Qian Zhang†, Mainul Haque, Rong Qu, Wenting Duan, Zhen Chen
 
+\* Equal contribution &nbsp;&nbsp; † Corresponding author
+
+**University of Nottingham Ningbo China · University of Nottingham · University of Lincoln · Yale University**
 
 </div>
 
@@ -25,20 +30,11 @@
 ## 📰 News
 
 - **[2026.03]** 🎉 Code for FreqDINO is now publicly available!
+- **[2025.12]** 🎉 FreqDINO accepted at **ISBI 2026**!
 
 ---
 
-## 🔍 Overview
 
-FreqDINO enhances DINOv3-based medical image segmentation through three complementary frequency-domain modules:
-
-| Module | Description |
-|--------|-------------|
-| **MFEA** | Multi-Scale Frequency Extraction and Alignment |
-| **FBAA** | Frequency-Guided Boundary Refinement |
-| **FGBP** | Multi-Task Boundary-Guided Decoder |
-
----
 
 ## 🛠 Setup
 
@@ -116,6 +112,14 @@ python eval.py \
 ## 📜 Citation
 
 If you find this work helpful, please consider citing:
+```bibtex
+@article{zhang2025freqdino,
+  title={FreqDINO: Frequency-Guided Adaptation for Generalized Boundary-Aware Ultrasound Image Segmentation},
+  author={Zhang, Yixuan and Xu, Qing and Li, Yue and He, Xiangjian and Zhang, Qian and Haque, Mainul and Qu, Rong and Duan, Wenting and Chen, Zhen},
+  journal={arXiv preprint arXiv:2512.11335},
+  year={2025}
+}
+```
 
 ---
 
