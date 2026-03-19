@@ -1,12 +1,52 @@
-# ISBI 2026 | FreqDINO: Frequency-Enhanced DINOv3 Adaptation for Medical Image Segmentation
+<div align="center">
 
-### [[ArXiv Paper]()]
+# FreqDINO: Frequency-Enhanced DINOv3 Adaptation for Medical Image Segmentation
 
--------------------------------------------
+**ISBI 2026**
+
+[![arXiv](https://img.shields.io/badge/arXiv-2512.11335-b31b1b.svg)](https://arxiv.org/abs/2512.11335)
+[![GitHub](https://img.shields.io/github/stars/MingLang-FD/FreqDINO?style=social)](https://github.com/MingLang-FD/FreqDINO)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+</div>
+
+---
+
+> **FreqDINO** bridges the gap between natural-image vision transformers and medical image segmentation by injecting wavelet-based frequency cues into a frozen DINOv3 backbone — no full fine-tuning required.
+
+---
+
+## 👥 Authors
+
+<div align="center">
+
+[Author Name]<sup>1</sup>&nbsp;&nbsp; [Author Name]<sup>1</sup>&nbsp;&nbsp; [Author Name]<sup>1</sup>
+
+<sup>1</sup>**The Hong Kong Polytechnic University**
+
+</div>
+
+---
 
 ## 📰 News
 
-- **[2026.03]** We have released the code for FreqDINO!
+- **[2026.03]** 🎉 Code for FreqDINO is now publicly available!
+
+---
+
+## 🔍 Overview
+
+FreqDINO enhances DINOv3-based medical image segmentation through three complementary frequency-domain modules:
+
+| Module | Description |
+|--------|-------------|
+| **MSFE** | Multi-Scale Frequency Enhancement via wavelet decomposition |
+| **FBAA** | Frequency-Balanced Adapter Aggregation |
+| **FGBP** | Frequency-Guided Boundary Perception |
+
+These modules work together with a cross-attention decoder to produce accurate segmentation while keeping the backbone frozen.
+
+---
 
 ## 🛠 Setup
 
@@ -22,28 +62,35 @@ pip install timm pytorch-wavelets albumentations monai pytorch-lightning \
             scikit-image opencv-python tqdm seaborn pandas matplotlib
 ```
 
-The data structure is as follows.
+### 📂 Data Structure
+
 ```
 FreqDINO
 ├── datasets
 │   ├── image
-│     ├── case_001.png
-│     ├── ...
+│   │   ├── case_001.png
+│   │   └── ...
 │   ├── mask
-│     ├── case_001.png
-│     ├── ...
-│   ├── data_split.json
+│   │   ├── case_001.png
+│   │   └── ...
+│   └── data_split.json
 ```
 
-The json structure is as follows.
+The `data_split.json` should follow this format:
 
-    {
-      "train": ["case_001.png", "case_004.png"],
-      "valid": ["case_002.png"],
-      "test":  ["case_003.png"]
-    }
+```json
+{
+  "train": ["case_001.png", "case_004.png"],
+  "valid": ["case_002.png"],
+  "test":  ["case_003.png"]
+}
+```
 
-For training, run:
+---
+
+## 🚀 Usage
+
+**Training:**
 
 ```bash
 python train.py \
@@ -59,7 +106,7 @@ python train.py \
     --wavelet haar
 ```
 
-For evaluation, run:
+**Evaluation:**
 
 ```bash
 python eval.py \
@@ -72,8 +119,11 @@ python eval.py \
     --decoder_type boundary_guided
 ```
 
+---
+
 ## 📜 Citation
-If you find this work helpful for your project, please consider citing the following paper:
+
+If you find this work helpful, please consider citing:
 
 ```bibtex
 @inproceedings{freqdino2026,
@@ -83,7 +133,9 @@ If you find this work helpful for your project, please consider citing the follo
 }
 ```
 
-## Acknowledgements
+---
 
-* [DINOv3 (timm)](https://github.com/huggingface/pytorch-image-models)
-* [pytorch-wavelets](https://github.com/fbcotter/pytorch_wavelets)
+## 🙏 Acknowledgements
+
+- [DINOv3 (timm)](https://github.com/huggingface/pytorch-image-models)
+- [pytorch-wavelets](https://github.com/fbcotter/pytorch_wavelets)
