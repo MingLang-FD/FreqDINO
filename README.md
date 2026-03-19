@@ -1,4 +1,4 @@
-<div align="center">
+<img width="783" height="68" alt="image" src="https://github.com/user-attachments/assets/9c982f61-a7a5-4846-bfaf-36c8d9abddb7" /><div align="center">
 
 # FreqDINO: Frequency-Enhanced DINOv3 Adaptation for Medical Image Segmentation
 
@@ -20,9 +20,7 @@
 
 <div align="center">
 
-[Author Name]<sup>1</sup>&nbsp;&nbsp; [Author Name]<sup>1</sup>&nbsp;&nbsp; [Author Name]<sup>1</sup>
 
-<sup>1</sup>**The Hong Kong Polytechnic University**
 
 </div>
 
@@ -40,11 +38,9 @@ FreqDINO enhances DINOv3-based medical image segmentation through three compleme
 
 | Module | Description |
 |--------|-------------|
-| **MSFE** | Multi-Scale Frequency Enhancement via wavelet decomposition |
-| **FBAA** | Frequency-Balanced Adapter Aggregation |
-| **FGBP** | Frequency-Guided Boundary Perception |
-
-These modules work together with a cross-attention decoder to produce accurate segmentation while keeping the backbone frozen.
+| **MFEA** | Multi-Scale Frequency Extraction and Alignment |
+| **FBAA** | Frequency-Guided Boundary Refinement |
+| **FGBP** | Multi-Task Boundary-Guided Decoder |
 
 ---
 
@@ -124,14 +120,6 @@ python eval.py \
 ## 📜 Citation
 
 If you find this work helpful, please consider citing:
-
-```bibtex
-@inproceedings{freqdino2026,
-  title     = {FreqDINO: Frequency-Enhanced DINOv3 Adaptation for Medical Image Segmentation},
-  booktitle = {IEEE International Symposium on Biomedical Imaging (ISBI)},
-  year      = {2026}
-}
-```
 
 ---
 
