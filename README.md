@@ -1,5 +1,5 @@
 <div align="center">
-# ISBI 2026 FreqDINO: Frequency-Guided Adaptation for Generalized Boundary-Aware Ultrasound Image Segmentation
+ISBI 2026 FreqDINO: Frequency-Guided Adaptation for Generalized Boundary-Aware Ultrasound Image Segmentation
 
 [![arXiv](https://img.shields.io/badge/arXiv-2512.11335-b31b1b.svg)](https://arxiv.org/abs/2512.11335)
 [![GitHub](https://img.shields.io/github/stars/MingLang-FD/FreqDINO?style=social)](https://github.com/MingLang-FD/FreqDINO)
@@ -23,7 +23,7 @@
 
 <sup>\*</sup> Equal Contribution. &emsp; <sup>†</sup> Corresponding Author.
 
-</div>>
+</div>
 
 ---
 
