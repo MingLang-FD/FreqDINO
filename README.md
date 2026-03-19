@@ -1,15 +1,16 @@
 <div align="center">
-ISBI 2026 FreqDINO: Frequency-Guided Adaptation for Generalized Boundary-Aware Ultrasound Image Segmentation
+            
+# ISBI 2026 | FreqDINO: Frequency-Guided Adaptation for Generalized Boundary-Aware Ultrasound Image Segmentation
 
 [![arXiv](https://img.shields.io/badge/arXiv-2512.11335-b31b1b.svg)](https://arxiv.org/abs/2512.11335)
-[![GitHub](https://img.shields.io/github/stars/MingLang-FD/FreqDINO?style=social)][(https://github.com/MingLang-FD/FreqDINO)](https://github.com/MingLang-FD/FreqDINO)
+[![GitHub](https://img.shields.io/github/stars/MingLang-FD/FreqDINO?style=social)](https://github.com/MingLang-FD/FreqDINO)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 </div>
 
 ---
 
-> **FreqDINO** adapts a frozen DINOv3 backbone for ultrasound segmentation via explicit frequency-domain decomposition. Three synergistic modules — **MFEA** (multi-scale wavelet decomposition), **FGBR** (boundary prototype refinement), and **MBGD** (joint boundary-semantic decoding) — enable precise boundary perception without full fine-tuning. FreqDINO achieves **86.52% Dice** on BUSI and strong zero-shot generalization on TN3K.
+> **FreqDINO** adapts a frozen DINOv3 backbone for ultrasound segmentation via explicit frequency-domain decomposition. Three synergistic modules — **MFEA** (multi-scale wavelet decomposition), **FGBR** (boundary prototype refinement), and **MBGD** (joint boundary-semantic decoding) — enable precise boundary perception without full fine-tuning.
 
 ---
 
