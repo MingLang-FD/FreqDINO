@@ -9,7 +9,7 @@
 
 ---
 
-> **FreqDINO** is a frequency-guided segmentation framework that adapts a frozen DINOv3 backbone for ultrasound image segmentation. It addresses DINOv3's limited sensitivity to ultrasound-specific boundary degradation by introducing three complementary modules: **MFEA** for multi-scale frequency extraction and alignment via Haar wavelet transform, **FGBR** for boundary prototype distillation and feature refinement, and **MBGD** for joint boundary-semantic prediction. FreqDINO achieves **86.52% Dice** on BUSI and strong zero-shot generalization on TN3K.
+> **FreqDINO** adapts a frozen DINOv3 backbone for ultrasound segmentation via explicit frequency-domain decomposition. Three synergistic modules — **MFEA** (multi-scale wavelet decomposition), **FGBR** (boundary prototype refinement), and **MBGD** (joint boundary-semantic decoding) — enable precise boundary perception without full fine-tuning. FreqDINO achieves **86.52% Dice** on BUSI and strong zero-shot generalization on TN3K.
 
 ---
 
@@ -17,13 +17,13 @@
 
 <div align="center">
 
-Yixuan Zhang\*, Qing Xu\*, Yue Li\*, Xiangjian He†, Qian Zhang†, Mainul Haque, Rong Qu, Wenting Duan, Zhen Chen
+[Yixuan Zhang](https://scholar.google.com/citations?hl=en&user=ezcvFNEAAAAJ)<sup>1\*</sup> [Qing Xu](https://scholar.google.com/citations?user=IzA-Ij8AAAAJ&hl=en&authuser=1)<sup>1,2\*</sup> [Yue Li](https://scholar.google.com/citations?hl=en&user=TvAELsAAAAAJ)<sup>1,2\*</sup> [Xiangjian He](https://scholar.google.com/citations?user=BiBXGfIAAAAJ&hl=en&oi=ao)<sup>1†</sup> [Qian Zhang](https://scholar.google.com/citations?user=nJlSf_YAAAAJ&hl=en&oi=ao)<sup>1†</sup> [Mainul Haque](https://scholar.google.com/citations?hl=en&user=Me2aCpgAAAAJ)<sup>1</sup> [Rong Qu](https://scholar.google.com/citations?user=ErszCRMAAAAJ&hl=en&oi=ao)<sup>2</sup> [Wenting Duan](https://scholar.google.com/citations?user=H9C0tX0AAAAJ&hl=en&authuser=1)<sup>3</sup> [Zhen Chen](https://franciszchen.github.io/)<sup>4</sup>
 
-\* Equal contribution &nbsp;&nbsp; † Corresponding author
+<sup>1</sup>University of Nottingham Ningbo China &emsp; <sup>2</sup>University of Nottingham &emsp; <sup>3</sup>University of Lincoln &emsp; <sup>4</sup>The Hong Kong Polytechnic University
 
-**University of Nottingham Ningbo China · University of Nottingham · University of Lincoln · Yale University**
+<sup>\*</sup> Equal Contribution. &emsp; <sup>†</sup> Corresponding Author.
 
-</div>
+</div>>
 
 ---
 
