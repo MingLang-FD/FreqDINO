@@ -1,5 +1,3 @@
-<img width="783" height="68" alt="image" src="https://github.com/user-attachments/assets/9c982f61-a7a5-4846-bfaf-36c8d9abddb7" /><div align="center">
-
 # FreqDINO: Frequency-Enhanced DINOv3 Adaptation for Medical Image Segmentation
 
 **ISBI 2026**
